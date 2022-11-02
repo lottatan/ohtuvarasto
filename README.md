@@ -1,4 +1,4 @@
 # ohtuvarasto
 
 ![GHA workflow badge](https://github.com/lottatan/ohtuvarasto/workflows/CI/badge.svg)
-![Codecov badge](9a2fb58b-3751-43ea-a5a8-bbfa59cb5b13)
+![Codecov workflow badge](9e73c9aab8e0ef0704ffde2828f4be58138423d6)
