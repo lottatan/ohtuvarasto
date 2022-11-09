@@ -1,8 +1,8 @@
-import unittest 
+import unittest
 from varasto import Varasto
 
 
-class TestVarasto(unittest.TestCase): 
+class TestVarasto(unittest.TestCase):
     def setUp(self):
         self.varasto = Varasto(10)
 
@@ -70,4 +70,4 @@ class TestVarasto(unittest.TestCase):
         self.assertAlmostEqual(self.varasto.paljonko_mahtuu(), 4)
 
     def test_oikea_tulostus(self):
-        self.assertAlmostEqual((self.varasto.__str__()), "saldo = 0, vielä tilaa 10") 
+        self.assertAlmostEqual(str(self.varasto.__str__()), "saldo = 0, vielä tilaa 10")
