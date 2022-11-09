@@ -1,8 +1,8 @@
-import unittest
+import unittest 
 from varasto import Varasto
 
 
-class TestVarasto(unittest.TestCase):
+class TestVarasto(unittest.TestCase): 
     def setUp(self):
         self.varasto = Varasto(10)
 
@@ -28,7 +28,7 @@ class TestVarasto(unittest.TestCase):
         self.varasto.lisaa_varastoon(8)
 
         self.assertAlmostEqual(self.varasto.saldo, 8)
-    
+
     def test_lisays_liikaa_saldoa(self):
         self.varasto.lisaa_varastoon(12)
 
@@ -52,7 +52,6 @@ class TestVarasto(unittest.TestCase):
 
     def test_otetaa_vaara_maara(self):
         self.varasto.ota_varastosta(-1)
-        
         self.assertAlmostEqual(self.varasto.saldo, 0)
 
     def test_ottaminen_palauttaa_oikean_maaran(self):
@@ -71,4 +70,4 @@ class TestVarasto(unittest.TestCase):
         self.assertAlmostEqual(self.varasto.paljonko_mahtuu(), 4)
 
     def test_oikea_tulostus(self):
-        self.assertAlmostEqual(str(self.varasto.__str__()), "saldo = 0, vielä tilaa 10")
+        self.assertAlmostEqual((self.varasto.__str__()), "saldo = 0, vielä tilaa 10") 
